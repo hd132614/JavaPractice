@@ -19,31 +19,15 @@ public class CarTest {
         /**
          * set Cars
          */
-        Car[] cars = {new Car(), new Car(), new Car()};
-        cars[0].setCompany("현대자동차");
-        cars[0].setModel("제네시스");
-        cars[0].setColor("검정색");
-        cars[0].setMaxSpeed(225);
-        cars[0].setPrice(50000000);
-
-        cars[1].setCompany("기아자동차");
-        cars[1].setModel("K7");
-        cars[1].setColor("흰색");
-        cars[1].setMaxSpeed(246);
-        cars[1].setPrice(40000000);
-
-        cars[2].setCompany("삼성자동차");
-        cars[2].setModel("SM7");
-        cars[2].setColor("회색");
-        cars[2].setMaxSpeed(200);
-        cars[2].setPrice(38000000);
-
+        Car2[] cars = {new Car2("현대자동차", "제네시스", "검정색", 225, 50000000),
+                new Car2("기아자동차", "K7", "흰색", 246, 40000000),
+                new Car2("상성자동차", "SM7", "회색", 200, 38000000)};
 
         /**
          * print Car info
          */
         System.out.println(str_title);
-        for (Car aCar : cars) {
+        for (Car2 aCar : cars) {
             System.out.println(str_company + aCar.getCompany());
             System.out.print(str_model + aCar.getModel());
             System.out.println(str_color + aCar.getColor());
