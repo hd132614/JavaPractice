@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class StudentTest {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         ArrayList<Student> students = new ArrayList<Student>();
         students.add(new Student(13, 2, 3, 1));
         students.add(new Student(13, 2, 3, 2, "박명수"));
