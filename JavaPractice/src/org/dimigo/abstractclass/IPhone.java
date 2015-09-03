@@ -1,7 +1,5 @@
 package org.dimigo.abstractclass;
 
-import org.dimigo.inheritance.SmartPhone;
-
 /**
  * Created by HIPERCUBE on 8/28/15.
  */
