@@ -9,7 +9,7 @@ import java.util.List;
 public class MelonChart {
     public static void printList(List<Music> list) {
         for (int i = 0; i < list.size(); ++i) {
-            System.out.println(i + ". " + list.get(i).toString());
+            System.out.println(String.valueOf(i + 1) + ". " + list.get(i).toString());
         }
     }
 
