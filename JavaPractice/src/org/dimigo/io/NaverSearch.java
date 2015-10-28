@@ -85,16 +85,15 @@ public class NaverSearch {
              * 2. 스타 워즈 앤솔로지: 로그 원 - [펠리시티 존스, 벤 멘델슨, .. ]
              * 3. 스타워즈: 깨어난 포스 - [해리슨 포드, 마크 해밀, 캐리 피셔, .. ]
              ********************************************************/
-            for (int i = 0; i < movieList.size(); ++i) {
-                Movie aMovie = movieList.get(i);
-                System.out.println(String.valueOf(i + 1) + ". " + aMovie.getTitle() + " - " + aMovie.getActors());
-            }
 
             // files/movies.txt 파일에 write하기
-            try(BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/HIPERCUBE/IdeaProjects/JavaPractice/JavaPractice/files/movies.txt"))){
+            if (movieList == null) return;
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/HIPERCUBE/IdeaProjects/JavaPractice/JavaPractice/files/movies.txt"))) {
                 for (int i = 0; i < movieList.size(); ++i) {
                     Movie aMovie = movieList.get(i);
-                    writer.write(String.valueOf(i + 1) + ". " + aMovie.getTitle() + " - " + aMovie.getActors()+"\n");
+                    String print = String.valueOf(i + 1) + ". " + aMovie.getTitle() + " - " + aMovie.getActors() + "\n";
+                    writer.write(print);
+                    System.out.print(print);
                 }
             }
         } catch (IOException e) {
