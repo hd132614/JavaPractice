@@ -25,9 +25,8 @@ public class Runner extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (distance == 0) {
-                System.out.println(name + " 골인");
-            }
         }
+
+        System.out.println(name + " 골인");
     }
 }
