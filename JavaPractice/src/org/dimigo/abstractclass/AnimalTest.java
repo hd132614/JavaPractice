@@ -5,6 +5,7 @@ package org.dimigo.abstractclass;
  */
 public class AnimalTest {
     public static void main(String[] args) {
-
+        double a = 4, b = 3;
+        System.out.print((double)(b / a));
     }
 }
