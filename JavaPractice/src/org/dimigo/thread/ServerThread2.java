@@ -51,7 +51,7 @@ public class ServerThread2 implements Runnable {
             System.out.println("file name : " + fileName);
 
             // 파일 입력 스트림 생성
-            File file = new File("/Users/HIPERCUBE/IdeaProjects/JavaPractice/JavaPractice/src/org/dimigo/thread/org/dimigo/thread/" + fileName);
+            File file = new File("/Users/HIPERCUBE/IdeaProjects/JavaPractice/JavaPractice/src/org/dimigo/thread/" + fileName);
 
             // 해당 파일이 존재하는 경우
             if (file.exists()) {
